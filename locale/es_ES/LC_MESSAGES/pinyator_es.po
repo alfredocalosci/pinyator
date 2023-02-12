@@ -1,0 +1,291 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pinyator 2.0\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.2.4\n"
+
+msgid "Esdeveniments"
+msgstr "Eventos"
+
+msgid "Esdeveniment"
+msgstr "Evento"
+
+msgid "Configuració"
+msgstr "Configuración"
+
+msgid "Planificació"
+msgstr "Planificación"
+
+msgid "Posicions"
+msgstr "Posiciones"
+
+msgid "Nova posició"
+msgstr "Nueva posición"
+
+msgid "Estadístiques"
+msgstr "Estadísticas"
+
+msgid "Assaig/Actuació"
+msgstr "Ensayo/Actuación"
+
+msgid "Usuaris"
+msgstr "Usuarios"
+
+msgid "Llista esdeveniments disponibles"
+msgstr "Lista eventos disponibles"
+
+msgid "Vinc"
+msgstr "Vengo"
+
+msgid "No vinc"
+msgstr "No vengo"
+
+msgid "No sóc jo"
+msgstr "No soy yo"
+
+msgid "Estat"
+msgstr "Estado"
+
+msgid "Canviar a"
+msgstr "Cambiar a"
+
+msgid "Plantilles"
+msgstr "Plantillas"
+
+msgid "Malnom"
+msgstr "Apodo"
+
+msgid "Nom"
+msgstr "Nombre"
+
+msgid "Cognoms"
+msgstr "Apellidos"
+
+msgid "Altura"
+msgstr "Altura"
+
+msgid "Responsables"
+msgstr "Responsables"
+
+msgid "Aquesta web esta dissenyada per portar un control de les pinyes amb la seva assistència."
+msgstr "Esta web está diseñada para llevar un control de las piñas con su asistencia."
+
+msgid "No ho sé"
+msgstr "No lo sé"
+
+msgid "Es Folre"
+msgstr ""
+
+msgid "Es Nucli"
+msgstr ""
+
+msgid "Es Pinya"
+msgstr ""
+
+msgid "Es Tronc"
+msgstr ""
+
+msgid "Es Canalla"
+msgstr ""
+
+msgid "Imatge"
+msgstr ""
+
+msgid "Cerca"
+msgstr ""
+
+msgid "Neteja"
+msgstr ""
+
+msgid "Esborra"
+msgstr ""
+
+msgid "Edita"
+msgstr ""
+
+msgid "Mides"
+msgstr ""
+
+msgid "Tota la llista"
+msgstr ""
+
+msgid "Pinyes"
+msgstr ""
+
+msgid "Troncs"
+msgstr ""
+
+msgid "Troncs i nuclis"
+msgstr ""
+
+msgid "Actius"
+msgstr ""
+
+msgid "Inactius"
+msgstr ""
+
+msgid "Arxivats"
+msgstr ""
+
+msgid "Nou"
+msgstr ""
+
+msgid "Dia"
+msgstr ""
+
+msgid "Inscrits"
+msgstr ""
+
+msgid "Comentaris"
+msgstr ""
+
+msgid "Plantilla"
+msgstr ""
+
+msgid "Acció"
+msgstr ""
+
+msgid "GAAAASS"
+msgstr ""
+
+msgid "Ordena"
+msgstr ""
+
+msgid "Creat"
+msgstr ""
+
+msgid "Públic"
+msgstr ""
+
+msgid "Ordre"
+msgstr ""
+
+msgid "Castell"
+msgstr ""
+
+msgid "Hora"
+msgstr ""
+
+msgid "Baixa"
+msgstr ""
+
+msgid "Lesionat"
+msgstr ""
+
+msgid "Desa"
+msgstr ""
+
+msgid "Desa sense sortir"
+msgstr ""
+
+msgid "Responsable apuntar-me a pinyes"
+msgstr ""
+
+msgid "Sense responsable"
+msgstr ""
+
+msgid "Posicio tronc"
+msgstr ""
+
+msgid "Posicio pinya"
+msgstr ""
+
+msgid "Sense posicio"
+msgstr ""
+
+msgid "Força"
+msgstr ""
+
+msgid "texte"
+msgstr ""
+
+msgid "Cognom 1er"
+msgstr ""
+
+msgid "Cognom 2on"
+msgstr ""
+
+msgid "Portar peu"
+msgstr ""
+
+msgid "Selecciona plantilla"
+msgstr ""
+
+msgid "Selecciona castell"
+msgstr ""
+
+msgid "Nou castell"
+msgstr ""
+
+msgid "Exporta CSV"
+msgstr ""
+
+msgid "Assistència"
+msgstr "Asistencia"
+
+msgid "Veure"
+msgstr "Ver"
+
+msgid "Cerca casteller..."
+msgstr ""
+
+msgid "Torna als Castells"
+msgstr ""
+
+msgid "Torna als Esdeveniments"
+msgstr ""
+
+msgid "Torna als Castellers"
+msgstr ""
+
+msgid "Link als seus esdeveniments"
+msgstr ""
+
+msgid "Has seleccionat una plantilla i un casetell d'un esdeveniment per copiar, i com es normal el sistema no sap quin es el bo, encara no sap llegir la ment :P"
+msgstr ""
+
+msgid ""
+"Aquí podem trobar el llistat de castellers.\n"
+"Pel tema assistència, cada casteller té un codi únic del qual es crea un link només per ell i on podrà consultar els esdeveniments de la colla.\n"
+"En aquest apartat podem entrar dades d'un casteller, nom, malnom, altura, posició, si pot portar peu o si està lesionat.\n"
+"Per l'assistència hi ha l'opció d'assignar-li un responsable per poder-lo apuntar a pinyes :)\n"
+"També podrem veure un petit informe de les seves estadístiques."
+msgstr ""
+
+msgid ""
+"On es crean els esdeveniment per tal que la gent s'apunti.\n"
+"Es poden crear esdeveniments principals i secundaris, la idea es:\n"
+"Esdeveniment principal:\n"
+"- Actuació Mataro\n"
+"Esdeveniment secundari:\n"
+"- Bus anada\n"
+"- Bus tornada"
+msgstr ""
+
+msgid "També hi ha l'opció de veure els llistats de gent apuntada i modificar-ho."
+msgstr ""
+
+msgid "Aquí es crean les plantilles que després es s'utilitzaràn pels castells."
+msgstr ""
+
+msgid ""
+"On es crean els castells relacionats als esdeveniments per tal de tenir la gent apuntada.\n"
+"Es poden crear castells des de plantilles o des d'altres castells lligats als esdeveniments.\n"
+"Tot castell ha d'estar vinculat a un esdeveniment."
+msgstr ""
+
+msgid "Welcome back, %1$s! Your last visit was on %2$s"
+msgstr "Willkommen zurück, %1$s! Dein letzter Besuch war am %2$s"
+
+msgid "%d page read."
+msgid_plural "%d pages read."
+msgstr[0] "Eine Seite gelesen wurde."
+msgstr[1] "%d Seiten gelesen wurden."

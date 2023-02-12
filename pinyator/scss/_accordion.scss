@@ -1,0 +1,52 @@
+.accordion-component {
+
+	*[aria-expanded="true"] .icon-down {
+		display: none !important;
+	}
+
+	*[aria-expanded="true"] .icon-up {
+		display: inherit !important;
+	}
+
+	.card {
+		border: none;
+		.accordion-heading {
+			&.btn {
+				text-transform: none;
+				line-height: $accordion-line-height;
+				font-size: inherit;
+				border: none;
+				@include border-radius(0);
+			}
+		}
+		&:not(:last-of-type) {
+			.btn {
+				&:before {
+					content: '';
+					width: 96%;
+					height: 2px;
+					position: absolute;
+					bottom: 0;
+					left: 2%;
+					background-color: $white-40;
+				}
+				&[aria-expanded="true"]:before {
+					background-color: transparent;
+				}
+			}
+		}
+		&:first-of-type {
+			.btn {
+				@include border-top-radius($accordion-border-radius);
+			}
+		}
+		&:last-of-type {
+			.btn {
+				@include border-bottom-radius($accordion-border-radius);
+				&[aria-expanded="true"] {
+					@include border-radius(0);
+				}
+			}
+		}
+	}
+}
