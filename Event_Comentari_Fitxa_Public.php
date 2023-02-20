@@ -9,7 +9,7 @@
 	$id = intval($_GET["id"]);
 	$nom = strval($_GET["nom"]);
 	$url="Event_Comentari_Public";
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Event_Comentari_Fitxa.php";
+	include "$_SERVER[DOCUMENT_ROOT]/Event_Comentari_Fitxa.php";
 ?>
    </body>
 </html>

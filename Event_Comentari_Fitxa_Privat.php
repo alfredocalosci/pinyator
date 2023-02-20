@@ -23,7 +23,7 @@ $id = intval($_GET["id"]);
 <?php
 	$nom = "";
 	$url="Event_Comentari_Privat";
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Event_Comentari_Fitxa.php";
+	include "$_SERVER[DOCUMENT_ROOT]/Event_Comentari_Fitxa.php";
 ?>
    </body>
 </html>

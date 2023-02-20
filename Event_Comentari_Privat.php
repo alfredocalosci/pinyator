@@ -22,7 +22,7 @@ $id = intval($_GET["id"]);
 
 	<br>
 <?php
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Event_Comentari_Llista.php";
+	include "$_SERVER[DOCUMENT_ROOT]/Event_Comentari_Llista.php";
 ?>
    </body>
 </html>
