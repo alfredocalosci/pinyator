@@ -43,7 +43,7 @@ Install php server
 
 Clone and run project
 
-    git clone https://gitlab.com/elputorei/Pinyator pinyator
+    git clone https://github.com/alfredocalosci/pinyator_CCM pinyator
     php -S 127.0.0.1:8000
 
 ## Open webpage
