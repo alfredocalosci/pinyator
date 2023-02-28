@@ -2,11 +2,11 @@
 <head>
   <title>Pinyator - Inscrits esdeveniment</title>
   <meta charset="utf-8">
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>  
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
-<?php $menu=2; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php"; 
+<?php $menu=2; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";
 
 $id = intval($_GET["id"]);
 
@@ -23,7 +23,7 @@ $id = intval($_GET["id"]);
 <?php
 	$nom = "";
 	$url="Event_Comentari_Privat";
-	include "$_SERVER[DOCUMENT_ROOT]/Event_Comentari_Fitxa.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Event_Comentari_Fitxa.php";
 ?>
    </body>
 </html>

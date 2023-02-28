@@ -29,7 +29,7 @@ if (!empty($_POST["lesionat"]))
 if (!empty($_POST["portarpeu"]))
 	$portarpeu=intval($_POST["portarpeu"]);
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 $malnom = GetStrDB($malnom);
 $nom = GetStrDB($nom);

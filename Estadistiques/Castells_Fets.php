@@ -3,7 +3,7 @@
 </head>
 <link rel="stylesheet" href="../Style_Custom.css">
 <body>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";?>
 
 <?php
 $temporada=strval($_GET["t"]);

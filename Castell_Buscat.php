@@ -5,14 +5,14 @@
   <script src="llibreria/castell.js"></script>
   <script src="llibreria/disseny.js"></script>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
 <?php
 
 $id = intval($_GET['id']);
 $malnom = strval($_GET['malnom']);
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 
 echo "<input type='text' id='myInput' class='form_edit' onkeyup='Buscat()' placeholder='"._('Cerca casteller...')."' value='".$malnom."'>";

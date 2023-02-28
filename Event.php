@@ -2,12 +2,12 @@
 <head>
   <title>Pinyator - Esdeveniment</title>
 <meta charset="utf-8">
-<?php $menu=2; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+<?php $menu=2; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 <script src="llibreria/popup_esborra.js"></script>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body class="popup">
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";?>
 
 <table class='butons'>
 	<tr class='butons'>
@@ -40,7 +40,7 @@ if (!empty($_GET["e"]))
 	$estat=intval($_GET["e"]);
 }
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 $sql="SELECT E.EVENT_ID, E.NOM, date_format(E.DATA, '%d-%m-%Y %H:%i') AS DATA,
 E.ESTAT, E.EVENT_PARE_ID, E.ESPLANTILLA,
@@ -150,6 +150,6 @@ mysqli_close($conn);
 ?>
 
 	</table>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Popup_Esborrar.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Popup_Esborrar.php";?>
    </body>
 </html>

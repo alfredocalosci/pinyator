@@ -1,7 +1,7 @@
 <div class="topnav" id="MainTopnav">
 
 <a href="Pinyator.php"  style="padding:3px 10px"><img src="images/logo.png"></a>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/TranslatorHelper.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/TranslatorHelper.php";?>
 <?php
 
 $event="";

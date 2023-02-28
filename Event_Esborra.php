@@ -6,7 +6,7 @@
 <?php
 	$id = intval($_GET["id"]);
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 	
 	if ($id > 0)
 	{

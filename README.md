@@ -50,7 +50,7 @@ Clone and run project
 
 On:
 
-    http://localhost:8000/pinyator/Index.html
+    http://localhost:8000/utils/Index.html
 
 
 

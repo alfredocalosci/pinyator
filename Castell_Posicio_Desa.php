@@ -8,7 +8,7 @@ header("Content-Type: application/json; charset=UTF-8");
 // $lk = intval($_GET['lk']);
 // $txt = strval($_GET['txt']);
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 $arry= [];
 if (!empty($_GET["obj"]))

@@ -40,7 +40,7 @@ th
 &nbsp&nbsp<button class="boto" onClick="filterTable(false)">Actius</button>
 &nbsp&nbsp<a class="boto" onClick="ExportCSV(false)">Exporta CSV</a>
 
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";?>
 
 <?php
 $temporada=strval($_GET["t"]);

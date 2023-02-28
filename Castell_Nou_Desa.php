@@ -15,7 +15,7 @@ if (!empty($_POST["id"]))
 	$event="?id=".strval($_POST["id"]);
 }
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 if ($plantillaid > 0)
 {

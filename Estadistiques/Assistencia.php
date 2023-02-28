@@ -3,7 +3,7 @@
   <script src="../llibreria/graphics.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <body>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";?>
 <h3>Assistència</h3>
 	<div id="chart_div"  style="height: 500px"></div>
 	<span id="txtHint"></span>

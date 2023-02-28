@@ -2,14 +2,14 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pinyator - Castell</title>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
   <script src="llibreria/castell.js?1.2"></script>
   <script src="llibreria/disseny.js?1.2"></script>
   <script src="llibreria/canvasUtils.js"></script>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
-<?php $menu=4; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";
+<?php $menu=4; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";
 
 $id = intval($_GET['id']);
 $eventid = -1;
@@ -40,7 +40,7 @@ if ($_SESSION["carrec"]=="2")
 }
 
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 $titol = "";
 $estatEvent = 0;

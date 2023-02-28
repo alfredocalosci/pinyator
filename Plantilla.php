@@ -1,12 +1,12 @@
 <html>
 <head>
   <title>Pinyator - Plantilles</title>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 <script src="llibreria/popup_esborra.js"></script>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body class="popup">
-	<?php $menu=3; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";?>
+	<?php $menu=3; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";?>
  <a href="Plantilla_Fitxa.php" class="boto">Nova</a> <br><br>
 
 	<table class="llistes">
@@ -19,7 +19,7 @@
 	  </tr>
 	<?php
 
-		include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+		include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 		
 		$sql="SELECT PLANTILLA_ID, NOM, ESTAT
 		FROM PLANTILLA
@@ -55,7 +55,7 @@
 		mysqli_close($conn);
 	?>	  
 		  
-	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Popup_Esborrar.php";?>
+	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Popup_Esborrar.php";?>
 
    </body>
 </html>

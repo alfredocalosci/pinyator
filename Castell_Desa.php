@@ -18,7 +18,7 @@ if(!empty($_GET["id"]))
 	$accio = intval($_GET["a"]);
 }
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 if ($id > 0)
 {

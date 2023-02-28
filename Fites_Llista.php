@@ -3,7 +3,7 @@
   <title>Pinyator - Fites</title>
   <meta charset="utf-8">
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <style>
 	table
 	{
@@ -46,7 +46,7 @@ $cookie_name = "marrec_inscripcio";
 if (isset($_COOKIE[$cookie_name]))
 {
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 	$temporada = "";
 	$sql="SELECT C.TEMPORADA
