@@ -14,7 +14,7 @@ $ps = intval($_GET['ps']);
 $sg = intval($_GET['sg']);
 $lk = intval($_GET['lk']);
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 $t = GetStrDB($t);
 

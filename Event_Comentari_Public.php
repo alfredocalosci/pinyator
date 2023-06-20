@@ -3,7 +3,7 @@
   <title>Pinyator - Inscrits esdeveniment</title>
   <meta charset="utf-8">
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
 <?php  
 	$id = intval($_GET["id"]);

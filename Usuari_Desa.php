@@ -21,7 +21,7 @@ $segcastell = intval($_POST["segcastell"]);
 $segboss = intval($_POST["segboss"]);
 
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 $password = GetStrDB($password);
 $nom = GetStrDB($nom);

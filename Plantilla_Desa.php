@@ -105,7 +105,7 @@ if (!empty($_GET['pestanya_4']))
 }
 
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 $nom = GetStrDB($nom);
 $ps1 = GetStrDB($ps1);

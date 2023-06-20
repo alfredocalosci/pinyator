@@ -1,6 +1,6 @@
 
 <?php
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head_public.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head_public.php";
 	session_start();
 	if (empty($_SESSION["usuari"]))
 	{		

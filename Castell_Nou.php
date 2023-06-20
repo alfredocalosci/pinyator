@@ -1,16 +1,16 @@
 <html>
 <head>
   <title>Pinyator</title>
-<?php $menu=4; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+<?php $menu=4; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";?>
 <?php
 
 echo "<form method='post' action='Castell_Nou_Desa.php'>";
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 ?>
 <div>

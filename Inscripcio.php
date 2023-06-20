@@ -23,8 +23,8 @@ if (!empty($_GET['id']))
   <link rel="icon" sizes="111x192" href="images\logo192.png">
   <script src="llibreria/inscripcio.js?v=1.4"></script>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/TranslatorHelper.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/TranslatorHelper.php";?>
 <br>
 <body style='background-color:#cce6ff;'>
 <!-- <div style='position: fixed; z-index: -1; width: 90%; height: 80%;background-image: url("images/logo-ccm.png");background-repeat: no-repeat;
@@ -34,7 +34,7 @@ background-attachment: fixed;  background-position: center; opacity:0.4'>
 <?php
 	$topLlista = 60;
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 	$visualitzarFites = 0;
 	$visualitzarPenya = 0;
@@ -122,7 +122,7 @@ if ((!empty($_GET['id'])) && (isset($_COOKIE[$cookie_name])))
 	}
 	echo "<h3>"._('Llista esdeveniments disponibles').":</h3>";
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Inscripcio_taula.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Inscripcio_taula.php";
 
 	$sql="SELECT DISTINCT C.CODI, C.MALNOM, C.CASTELLER_ID
 	FROM CASTELLER AS CR
@@ -139,7 +139,7 @@ if ((!empty($_GET['id'])) && (isset($_COOKIE[$cookie_name])))
 			$malnom = $row["MALNOM"];
 			echo "<h3>".$malnom."</h3>";
 			$Casteller_id = $row["CASTELLER_ID"];
-			include "$_SERVER[DOCUMENT_ROOT]/pinyator/Inscripcio_taula.php";
+			include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Inscripcio_taula.php";
 		}
 	}
 

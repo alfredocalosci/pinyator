@@ -1,16 +1,16 @@
 <html>
 <head>
   <title>Pinyator</title>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
 <form method='post' action='Plantilla_Desa.php'>
 <?php 
 
 $menu=3; 
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";
 
 
 $id = 0;
@@ -30,7 +30,7 @@ $ps2="";
 $ps3="";
 $ps4="";
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 if ($id > 0)
 {

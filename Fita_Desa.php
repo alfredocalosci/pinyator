@@ -13,7 +13,7 @@ $recompensa = strval($_POST["recompensa"]);
 $ordre = intval($_POST["ordre"]);
 
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 $nom = GetStrDB($nom);
 $temporada = GetStrDB($temporada);
