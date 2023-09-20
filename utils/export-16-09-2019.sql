@@ -4839,6 +4839,7 @@ CREATE TABLE `EVENT` (
   `Event_ID` int(11) NOT NULL,
   `Nom` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `Data` datetime NOT NULL,
+  `Locacio` varchar(100) NULL,
   `Tipus` int(11) NOT NULL,
   `Estat` int(11) NOT NULL DEFAULT 1,
   `EVENT_PARE_ID` int(11) NOT NULL DEFAULT 0,

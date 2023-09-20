@@ -120,6 +120,7 @@ CREATE TABLE IF NOT EXISTS `EVENT` (
   `Event_ID` int(11) NOT NULL AUTO_INCREMENT,
   `Nom` varchar(100) NOT NULL,
   `Data` datetime NOT NULL,
+  `Locacio` varchar(100) NULL,
   `Tipus` int(11) NOT NULL,
   `Estat` int(11) NOT NULL DEFAULT '1',
   `EVENT_PARE_ID` int(11) NOT NULL DEFAULT '0',

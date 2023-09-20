@@ -21,6 +21,7 @@ if (!empty($_GET['id']))
 }
 
 $nom = "";
+$locacio = "";
 $data = "";
 $estat = -1;
 $tipus=0;
@@ -38,7 +39,7 @@ include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 if ($id > 0)
 {
-	$sql="SELECT E.EVENT_ID, E.NOM, 
+	$sql="SELECT E.EVENT_ID, E.NOM, E.LOCACIO,
 	date_format(E.DATA, '%Y-%m-%d') AS DATA,
 	date_format(E.DATA, '%H:%i') AS HORA,
 	E.TIPUS, E.ESTAT, E.EVENT_PARE_ID, E.ESPLANTILLA,
@@ -54,6 +55,7 @@ if ($id > 0)
 		while($row = mysqli_fetch_assoc($result))
 		{
 			$nom = $row["NOM"];
+			$locacio = $row["LOCACIO"];
 			$data = $row["DATA"];
 			$hora = $row["HORA"];
 			$estat = $row["ESTAT"];
@@ -135,6 +137,9 @@ if (!empty($_GET["e"]))
 	?>
 	<input type="date" class="form_edit" name="data" value="<?php echo $data ?>" required>
 	<input type="time" class="form_edit" name="hora" value="<?php echo $hora ?>" required>
+<br><br>
+	<label>Locació</label><br>
+	<input type="text" class="form_edit" name="locacio" value="<?php echo $locacio ?>">
 <br><br>
 	<label>Tipus</label><br>
 	<label class="radio-inline"><input type="radio" name="tipus" <?php if($tipus==-1) echo"checked"?> value=-1>Altres</label>
