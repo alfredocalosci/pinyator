@@ -52,6 +52,15 @@ On:
 
     http://localhost:8000/utils/Index.html
 
+## Local Setup on Mac
+### Prerequisites
+* Docker
 
+### MySQL - Mariadb
 
-    
+1. CD into the /db folder and run `docker-compose up -d`  
+You can access to the DB server like this:
+`docker exec -it repo-db-1 mariadb --user testuser -pT3niente`
+2. Replace Connexio.php line 3 with `$conn = mysqli_connect("localhost:6603", "testuser", "T3niente", "pinyator");`
+3. CD into the repository's parent folder and run: `php -S 127.0.0.1:8000` 
+4. Use admin/PorElBote! for login as admin.
