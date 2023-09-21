@@ -65,8 +65,10 @@ background-attachment: fixed;  background-position: center; opacity:0.4'>
 	}
 ?>
 </div>
-<div style="position: absolute; right: 0px; top: 4px;">
-<?php
+<!-- Comentando esto por ahora, porque no hace falta, el equipo no lo utiliza y genera un extra de complejidad, performance y procesamiento que nos podemos ahorrar. -->
+<!-- Commented area START -->
+<!-- <div style="position: absolute; right: 0px; top: 4px;"> -->
+<!-- <?php
     $eventId=0;
 	$hashtag="";
 	$hasHash=0;
@@ -92,8 +94,10 @@ background-attachment: fixed;  background-position: center; opacity:0.4'>
 	}
 
 	echo "<iframe src='Counter.php?id=".$eventId."&h=".$hashtag."&hh=".$hasHash."' class='counterframe' id='counterCastellers'></iframe>";
-?>
-</div>
+?> -->
+<!-- </div> -->
+<!-- Commented area END -->
+
 <div style="position: absolute; right: 6px; left: 6px; top: <?php echo $topLlista?>px;">
 	<a class="pull-right" href=<?php echo "?lang=".$altLangCode.""?>><span class="glyphicon glyphicon-globe"></span><?php echo _('Canviar a')." ".$altLangName?></a>
 <?php
