@@ -1,6 +1,6 @@
 <?php
     try {
-	    $conn = mysqli_connect("localhost", "root", "T3niente", "pinyator");
+	    $conn = mysqli_connect("localhost", "u124167221_pinya", "T3niente", "u124167221_pinya");
     } catch (Exception $e) {
         error_log("Caught $e");
     }
