@@ -41,7 +41,7 @@ if ($id > 0)
 }
 else
 {
-	$sql="INSERT INTO EVENT(NOM,DATA,LOACIO,TIPUS,ESTAT,EVENT_PARE_ID,ESPLANTILLA,CONTADOR,HASHTAG,TEMPORADA) VALUES('".$nom."','".GetFormatedDateTime($data,$hora)."','".$locacio."',".$tipus.",".$estat.",".$pare.",".$esplantilla.",".$contador.",'".$hashtag."','".$temporada."');";
+	$sql="INSERT INTO EVENT(NOM,DATA,LOCACIO,TIPUS,ESTAT,EVENT_PARE_ID,ESPLANTILLA,CONTADOR,HASHTAG,TEMPORADA) VALUES('".$nom."','".GetFormatedDateTime($data,$hora)."','".$locacio."',".$tipus.",".$estat.",".$pare.",".$esplantilla.",".$contador.",'".$hashtag."','".$temporada."');";
 }
 
 if (mysqli_multi_query($conn, $sql)) 
