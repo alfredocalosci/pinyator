@@ -1,5 +1,9 @@
 <?php
-	$conn = mysqli_connect("localhost", "u124167221_pinya", "T3niente", "u124167221_pinya");
+    try {
+	    $conn = mysqli_connect("localhost", "u124167221_pinya", "T3niente", "u124167221_pinya");
+    } catch (Exception $e) {
+        error_log("Caught $e");
+    }
 
 	if (mysqli_connect_errno()) {
 		printf("Connect failed: %s\n", mysqli_connect_error());

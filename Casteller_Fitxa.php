@@ -1,13 +1,13 @@
 <html>
 <head>
 	<title>Pinyator</title>
-	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
-<?php $menu=1; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";
+<?php $menu=1; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 	$id = 0;
 	if (!empty($_GET['id']))
@@ -135,11 +135,11 @@
 				<tr style="padding-top:20px">
 					<td style="padding-right:20px">
 						<label for="sel1"><?php echo _("Posicio pinya"); ?>:</label>
-						<?php include "$_SERVER[DOCUMENT_ROOT]/Posicio_pinya_selector.php";?>
+						<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Posicio_pinya_selector.php";?>
 					</td>
 					<td>
 						<label for="sel1"><?php echo _("Posicio tronc"); ?>:</label>
-						<?php include "$_SERVER[DOCUMENT_ROOT]/Posicio_tronc_selector.php";?>
+						<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Posicio_tronc_selector.php";?>
 					</td>
 				</tr>
 			</table>

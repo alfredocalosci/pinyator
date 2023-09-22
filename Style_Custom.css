@@ -654,3 +654,24 @@ input:checked + .slider:before {
     background: none;
     border: none;
 }
+
+/* Tabla Incripció */
+.tabla-inscripcio tr:nth-child(even) {
+    background-color: white;
+}
+
+.tabla-inscripcio th {
+    padding: 15px 0px;
+}
+
+.tabla-inscripcio tr td {
+    padding: 15px 0px;
+}
+.tabla-inscripcio tr td:first-child {
+    padding: 15px 10px;
+}
+
+.tabla-inscripcio .event-locacio {
+    margin-top: 1rem;
+    display: block;
+}

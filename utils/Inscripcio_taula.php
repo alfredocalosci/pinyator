@@ -3,7 +3,7 @@ if (!empty($Casteller_id))
 {
 	$script = "";
 
-	$sql="SELECT E.EVENT_ID, E.NOM AS EVENT_NOM, E.EVENT_PARE_ID,
+	$sql="SELECT E.EVENT_ID, E.NOM AS EVENT_NOM, E.LOCACIO AS EVENT_LOCACIO, E.EVENT_PARE_ID,
 	date_format(E.DATA, '%d-%m-%Y %H:%i') AS DATA, ".$Casteller_id." AS CASTELLER_ID, IFNULL(I.ESTAT,-1) AS ESTAT,
 	IFNULL(EP.DATA, E.DATA) AS ORDENACIO,
 	IFNULL(I.ACOMPANYANTS, 0) AS ACOMPANYANTS, E.TIPUS,
@@ -31,7 +31,7 @@ if (!empty($Casteller_id))
 	if (mysqli_num_rows($result2) > 0)
 	{
 		$PosicioId = 0;
-		echo "<table width='100%' >
+		echo "<table width='100%' class='tabla-inscripcio'>
 			<tr>
 				<th  width='60%'>"._('Esdeveniments')."</th>";
 		if ($visualitzarPenya)
@@ -45,7 +45,6 @@ if (!empty($Casteller_id))
 
 		echo "	<th width='20%'>"._('Estat')."</th>
 			</tr>";
-		$Separador="";
 		// output data of each row
 		while($row2 = mysqli_fetch_assoc($result2))
 		{
@@ -74,6 +73,10 @@ if (!empty($Casteller_id))
 			{
 				$eventNom = "<b>".$row2["EVENT_NOM"]."</b>";
 			}
+			$eventLocacio = "";
+			if ($row2["EVENT_LOCACIO"] != "") {
+			    $eventLocacio = "<span class='event-locacio'>".$row2["EVENT_LOCACIO"]."</span>";
+			}
 			$stat  = $row2["ESTAT"];
 			if ($stat == -1)
 			{
@@ -86,12 +89,12 @@ if (!empty($Casteller_id))
 
 			if ($stat == 0)
 			{
-				$color = "style='background-color:#ff1a1a;'";
+				$color = "style='background-color:#ff1a1a; color: white;'";
 				$estat=_('No vinc');
 			}
 			elseif ($stat == 1)
 			{
-				$color = "style='background-color:#33cc33;'";//green
+				$color = "style='background-color:#33cc33; color: white;'";//green
 				$estat=_('Vinc');
 			}
 
@@ -99,12 +102,9 @@ if (!empty($Casteller_id))
 			$tFinal = "";
 			if ($row2["EVENT_PARE_ID"] > 0)
 			{
-				$Separador="";
 				$tInici = "<li>";
 				$tFinal = "</li>";
 			}
-
-			echo $Separador;
 
 			$acompanyants = "";
 			if ($row2["TIPUS"] == -1)
@@ -116,7 +116,7 @@ if (!empty($Casteller_id))
 
 			$script .= "EventNou(".$row2["EVENT_ID"].",".$stat.",".$row2["CASTELLER_ID"].");";
 			echo "<tr>
-			<td width='85%'>".$tInici.$comment.$eventNom."<br>".$row2["DATA"]."<br>".$acompanyants.$tFinal."</td>";
+			<td width='85%'>".$tInici.$comment.$eventNom."<br>".$row2["DATA"]."<br>".$acompanyants.$tFinal.$eventLocacio."</td>";
 			if ($visualitzarPenya)
 			{
 				echo "<td><b name='E".$row2["EVENT_ID"]."'>".$apuntats."</b></td>";
@@ -127,8 +127,6 @@ if (!empty($Casteller_id))
 			}
 			echo "<td><button class='boto' onClick='Save(".$row2["EVENT_ID"].", ".$row2["CASTELLER_ID"].")' data-vinc-label="._('Vinc')." data-novinc-label='"._('No vinc')."' id=".$idElement." ".$color.">".$estat."</button></td>
 			</tr>";
-
-			$Separador="<tr><td><br></td></tr>";
 		}
 		echo "</table>";
 

@@ -1,13 +1,13 @@
 <html>
 <head>
 	<title>Pinyator</title>
-	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
-<?php $menu=7; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";
+<?php $menu=7; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 	$id = 0;
 	if (!empty($_GET['id']))

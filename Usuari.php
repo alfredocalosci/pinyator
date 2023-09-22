@@ -1,11 +1,11 @@
 <html>
 <head>
 	<title>Pinyator - Usuaris</title>
-	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
-<?php $menu=6; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";?>
+<?php $menu=6; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";?>
 	<table class="butons">
 	<tr>
 		<th><a href="Usuari_Fitxa.php" class="boto" >Nou Usuari</a></th>
@@ -17,7 +17,7 @@
 			<th class="llistes">Nom</th>
 		</tr>
 <?php
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 	$sql="SELECT A.NOM, A.IDUSUARI
 	FROM USUARIS AS A";

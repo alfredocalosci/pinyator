@@ -1,14 +1,14 @@
 <html>
 <head>
 	<title>Pinyator - Castellers</title>
-	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 	<script src="llibreria/grids.js"></script>
 
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <script src="llibreria/table2CSV.js"></script>
 <body>
-<?php $menu=1; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";?>
+<?php $menu=1; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";?>
 	<table class="butons">
 		<tr>
 			<th>
@@ -44,7 +44,7 @@
 		</tr>
 <?php
 	$count = 0;
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 	$count=0;
 

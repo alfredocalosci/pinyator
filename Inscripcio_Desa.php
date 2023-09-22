@@ -3,7 +3,7 @@ $event_id = intval($_GET["e"]);
 $casteller_id = intval($_GET["c"]);
 $estat=0;
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 if (isset($_GET["s"])) 
 {

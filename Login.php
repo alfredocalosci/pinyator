@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 	$myusername = $_POST['uname'];
 	$mypassword = $_POST['psw'];
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";	  
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 	$sql = "SELECT CARREC, SEGADMIN, SEGCASTELLER, SEGEVENT, SEGCASTELL, SEGBOSS 
 	FROM USUARIS 
@@ -60,8 +60,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 <head>
 <title>Pinyator - Login</title>
 <meta charset="utf-8">
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/HeadLogin.php";
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/HeadLogin.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";
 ?>   
 </head>
 <style>
@@ -140,7 +140,7 @@ include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";
 </style>
 
 <body>
-<?php $menu=-1; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";
+<?php $menu=-1; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";
 if ($loged == true)
 {
 	echo "<meta http-equiv='refresh' content='0; url=Pinyator.php'/>";
@@ -157,6 +157,6 @@ if ($loged == true)
 			<button type="submit">Login</button>
 		</div>
 	</form>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Politica_Cookies.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Politica_Cookies.php";?>
 </body>
 </html>

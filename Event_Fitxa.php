@@ -1,11 +1,11 @@
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=gb18030">
   <title>Pinyator - Esdeveniment</title>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
-<?php $menu=2; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";?>
+<?php $menu=2; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";?>
 <?php
 
 $erd="";
@@ -21,6 +21,7 @@ if (!empty($_GET['id']))
 }
 
 $nom = "";
+$locacio = "";
 $data = "";
 $estat = -1;
 $tipus=0;
@@ -34,11 +35,11 @@ $autofocus="";
 
 echo "<form method='post' action='Event_Desa.php'>";
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 if ($id > 0)
 {
-	$sql="SELECT E.EVENT_ID, E.NOM, 
+	$sql="SELECT E.EVENT_ID, E.NOM, E.LOCACIO,
 	date_format(E.DATA, '%Y-%m-%d') AS DATA,
 	date_format(E.DATA, '%H:%i') AS HORA,
 	E.TIPUS, E.ESTAT, E.EVENT_PARE_ID, E.ESPLANTILLA,
@@ -54,6 +55,7 @@ if ($id > 0)
 		while($row = mysqli_fetch_assoc($result))
 		{
 			$nom = $row["NOM"];
+			$locacio = $row["LOCACIO"];
 			$data = $row["DATA"];
 			$hora = $row["HORA"];
 			$estat = $row["ESTAT"];
@@ -135,6 +137,9 @@ if (!empty($_GET["e"]))
 	?>
 	<input type="date" class="form_edit" name="data" value="<?php echo $data ?>" required>
 	<input type="time" class="form_edit" name="hora" value="<?php echo $hora ?>" required>
+<br><br>
+	<label>Locació</label><br>
+	<input type="text" class="form_edit" name="locacio" value="<?php echo $locacio ?>">
 <br><br>
 	<label>Tipus</label><br>
 	<label class="radio-inline"><input type="radio" name="tipus" <?php if($tipus==-1) echo"checked"?> value=-1>Altres</label>

@@ -8,19 +8,20 @@ if (!empty($_GET['reset']))
 ?>
 <html>
 <head>
-  <title>Pinyator</title>
-  <meta charset="utf-8">
+    <title>Pinyator CCM | Apuntat</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
 
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Politica_Cookies.php";?>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/TranslatorHelper.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Politica_Cookies.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/TranslatorHelper.php";?>
 
 <?php
 if(!isset($_COOKIE[$cookie_name]))
 {
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 
 	echo "<br>";

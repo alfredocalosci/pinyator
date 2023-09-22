@@ -1,12 +1,12 @@
 <html>
 <head>
   <title>Pinyator - Estadistiques</title>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
-<?php $menu=8; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";?>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";?>
+<?php $menu=8; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";?>
 <div class="sidenav" id="posicio" style="width:200px;" >
 	<label>TEMPORADA</label>
 	<select class="form_edit" id="temporada">

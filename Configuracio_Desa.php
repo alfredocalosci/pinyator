@@ -17,7 +17,7 @@ if (!empty($_POST["participants"]))
 	$participants = intval($_POST["participants"]);
 }
 
-include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 $sql="UPDATE CONFIGURACIO SET TEMPORADA='".$temporada."',
 	RESOLUCIOPANTALLA=".$resoluciopantalla.",FITES=".$fites.",PARTICIPANTS=".$participants;

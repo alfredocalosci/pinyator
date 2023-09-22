@@ -17,14 +17,15 @@ if (!empty($_GET['id']))
 
 <html>
 <head>
-  <title>Pinyator</title>
+  <title>Pinyator CCM | Inscripció</title>
+  <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" sizes="111x192" href="images\logo192.png">
   <link rel="icon" sizes="111x192" href="images\logo192.png">
   <script src="llibreria/inscripcio.js?v=1.4"></script>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/TranslatorHelper.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/TranslatorHelper.php";?>
 <br>
 <body style='background-color:#cce6ff;'>
 <!-- <div style='position: fixed; z-index: -1; width: 90%; height: 80%;background-image: url("images/logo-ccm.png");background-repeat: no-repeat;
@@ -34,7 +35,7 @@ background-attachment: fixed;  background-position: center; opacity:0.4'>
 <?php
 	$topLlista = 60;
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 	$visualitzarFites = 0;
 	$visualitzarPenya = 0;
@@ -65,8 +66,10 @@ background-attachment: fixed;  background-position: center; opacity:0.4'>
 	}
 ?>
 </div>
-<div style="position: absolute; right: 0px; top: 4px;">
-<?php
+<!-- Comentando esto por ahora, porque no hace falta, el equipo no lo utiliza y genera un extra de complejidad, performance y procesamiento que nos podemos ahorrar. -->
+<!-- Commented area START -->
+<!-- <div style="position: absolute; right: 0px; top: 4px;"> -->
+<!-- <?php
     $eventId=0;
 	$hashtag="";
 	$hasHash=0;
@@ -92,8 +95,10 @@ background-attachment: fixed;  background-position: center; opacity:0.4'>
 	}
 
 	echo "<iframe src='Counter.php?id=".$eventId."&h=".$hashtag."&hh=".$hasHash."' class='counterframe' id='counterCastellers'></iframe>";
-?>
-</div>
+?> -->
+<!-- </div> -->
+<!-- Commented area END -->
+
 <div style="position: absolute; right: 6px; left: 6px; top: <?php echo $topLlista?>px;">
 	<a class="pull-right" href=<?php echo "?lang=".$altLangCode.""?>><span class="glyphicon glyphicon-globe"></span><?php echo _('Canviar a')." ".$altLangName?></a>
 <?php
@@ -122,7 +127,7 @@ if ((!empty($_GET['id'])) && (isset($_COOKIE[$cookie_name])))
 	}
 	echo "<h3>"._('Llista esdeveniments disponibles').":</h3>";
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Inscripcio_taula.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Inscripcio_taula.php";
 
 	$sql="SELECT DISTINCT C.CODI, C.MALNOM, C.CASTELLER_ID
 	FROM CASTELLER AS CR
@@ -139,7 +144,7 @@ if ((!empty($_GET['id'])) && (isset($_COOKIE[$cookie_name])))
 			$malnom = $row["MALNOM"];
 			echo "<h3>".$malnom."</h3>";
 			$Casteller_id = $row["CASTELLER_ID"];
-			include "$_SERVER[DOCUMENT_ROOT]/pinyator/Inscripcio_taula.php";
+			include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Inscripcio_taula.php";
 		}
 	}
 

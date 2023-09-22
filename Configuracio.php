@@ -1,16 +1,16 @@
 <html>
 <head>
 	<title>Pinyator</title>
-	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Head.php";?>
+	<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Head.php";?>
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <style>
 td {padding:15px}
 </style>
 <body>
-<?php $menu=10; include "$_SERVER[DOCUMENT_ROOT]/pinyator/Menu.php";
+<?php $menu=10; include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Menu.php";
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 	
 	$temporada = "";
 	$resolucioPantalla = "";

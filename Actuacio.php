@@ -3,7 +3,7 @@
   <title>Pinyator - Actuació</title>
   <meta charset="utf-8">
 </head>
-<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/Style.php";?>
+<?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body style='background-color:#cce6ff;'>
 <!-- <div style='position: fixed; z-index: -1; width: 90%; height: 80%;background-image: url("images/logo-ccm.png");background-repeat: no-repeat;
 background-attachment: fixed;  background-position: center; opacity:0.4'>
@@ -15,7 +15,7 @@ $cookie_name = "marrec_inscripcio";
 if ((!empty($_GET['id'])) && (isset($_COOKIE[$cookie_name])))
 {
 
-	include "$_SERVER[DOCUMENT_ROOT]/pinyator/Connexio.php";
+	include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Connexio.php";
 
 	$malnom = "";
 	$sql="SELECT C.MALNOM
