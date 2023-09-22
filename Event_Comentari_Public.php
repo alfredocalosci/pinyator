@@ -1,6 +1,7 @@
 <html>
 <head>
-  <title>Pinyator - Inscrits esdeveniment</title>
+  <title>Pinyator CCM | Inscrits esdeveniment</title>
+  <meta name="robots" content="noindex, nofollow">
   <meta charset="utf-8">
 </head>
 <?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>

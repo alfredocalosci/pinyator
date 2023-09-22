@@ -89,12 +89,12 @@ if (!empty($Casteller_id))
 
 			if ($stat == 0)
 			{
-				$color = "style='background-color:#ff1a1a;'";
+				$color = "style='background-color:#ff1a1a; color: white;'";
 				$estat=_('No vinc');
 			}
 			elseif ($stat == 1)
 			{
-				$color = "style='background-color:#33cc33;'";//green
+				$color = "style='background-color:#33cc33; color: white;'";//green
 				$estat=_('Vinc');
 			}
 

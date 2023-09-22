@@ -17,7 +17,8 @@ if (!empty($_GET['id']))
 
 <html>
 <head>
-  <title>Pinyator</title>
+  <title>Pinyator CCM | Inscripció</title>
+  <meta name="robots" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" sizes="111x192" href="images\logo192.png">
   <link rel="icon" sizes="111x192" href="images\logo192.png">

@@ -8,8 +8,9 @@ if (!empty($_GET['reset']))
 ?>
 <html>
 <head>
-  <title>Pinyator</title>
-  <meta charset="utf-8">
+    <title>Pinyator CCM | Apuntat</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
 </head>
 <?php include "$_SERVER[DOCUMENT_ROOT]/pinyator/utils/Style.php";?>
 <body>
