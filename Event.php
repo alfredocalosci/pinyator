@@ -27,6 +27,7 @@
     <th class='llistes'><?php echo _("Dia"); ?></th>
 	<?php if (EsEventLv2())echo "<th class='llistes'>Castells</th>"; ?>
 	<th class='llistes'><?php echo _("Inscrits"); ?></th>
+	<th class='llistes'><?php echo _("Canalla"); ?></th>
 	<th class='llistes'><?php echo _("Comentaris"); ?></th>
 	<th class='llistes'><?php echo _("Plantilla"); ?></th>
 	<th class='llistes'><?php echo _("Estat"); ?></th>
@@ -54,7 +55,12 @@ IFNULL(EP.DATA, E.DATA) AS ORDENACIO,
 		JOIN CASTELLER C ON C.CASTELLER_ID=IU.CASTELLER_ID
 		JOIN POSICIO P ON P.POSICIO_ID=C.POSICIO_PINYA_ID
 		WHERE IU.EVENT_ID=E.EVENT_ID
-		AND (P.ESNUCLI=1 OR P.ESTRONC=1 OR P.ESCORDO=1)) AS UTILS
+		AND (P.ESNUCLI=1 OR P.ESTRONC=1 OR P.ESCORDO=1)) AS UTILS,
+(SELECT SUM(IF(IU.ESTAT > 0, 1, 0))
+		FROM INSCRITS IU
+		JOIN CASTELLER C ON C.CASTELLER_ID=IU.CASTELLER_ID
+		WHERE IU.EVENT_ID=E.EVENT_ID
+		AND C.POSICIO_TRONC_ID=12) AS CANALLA
 FROM EVENT AS E
 LEFT JOIN EVENT AS EP ON EP.EVENT_ID = E.EVENT_PARE_ID
 LEFT JOIN INSCRITS AS I ON I.EVENT_ID = E.EVENT_ID
@@ -70,6 +76,7 @@ if (mysqli_num_rows($result) > 0)
     // output data of each row
     while($row = mysqli_fetch_assoc($result))
 	{
+		
 		$a  = $row["ESTAT"];
 
 		if ($a == -1)
@@ -128,6 +135,7 @@ if (mysqli_num_rows($result) > 0)
 			echo "<td class='llistes'>".$linkCastells."</td>";
 		}
 		echo "<td class='llistes'><a href='Event_LlistaPrivat.php?".$link."'>(".$row["UTILS"].")".$row["INSCRITS_QTA"]."/".$row["CONTESTES_QTA"]."</a></td>
+		<td class='llistes'><a href='Event_LlistaCanalla.php?id=".$link."'>".$row["CANALLA"]."</a></td>
 		<td class='llistes'><a href='Event_Comentari_Privat.php?id=".$row["EVENT_ID"]."'>".$row["COMENTARIS"]."</a></td>
 		<td class='llistes'>".$esPlantilla."</td>
 		<td class='llistes'>".$estatNom."</td>";
