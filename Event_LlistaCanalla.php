@@ -26,8 +26,8 @@ $esEditable = 1;
 			
 			<th class='butons'>
 				Ordena per:
-				<a href="Event_LlistaPrivat.php?<?php echo $link?>"  class="boto" >Malnom</a>
-				<a href="Event_LlistaPrivat.php?<?php echo $link?>&o=ESTAT" class="boto" >Estat</a>
+				<a href="Event_LlistaCanalla.php?<?php echo $link?>"  class="boto" >Malnom</a>
+				<a href="Event_LlistaCanalla.php?<?php echo $link?>&o=ESTAT" class="boto" >Estat</a>
 			</th>
 		</tr>
 	</table>
